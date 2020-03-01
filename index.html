@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison Table</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <script defer src=script.js></script>
+</head>
+
+
+
+
+
+<header class="header">
+    <h1 class="logo">Logo</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="list__item"><a class="item__link" href="#">Home</a></li>
+            <li class="list__item"><a class="item__link" href="#">About</a></li>
+            <li class="list__item"><a class="item__link" href="#">Contact</a></li>
+            <li class="list__item"><a class="item__link" href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+
+<div class="nav__content">
+    <h2>Your content would go there</h2>
+</div>
+
+
+
+
+
+<body>
+    <section class="price-comparison">
+        <div class="price-column">
+            <div class="price-header">
+                <div class="price">
+                    <div class="dollar-sign">$</div>
+                    10
+                    <div class="per-month">/mo</div>
+                </div>
+                <div class="plan-name">Basic</div>
+            </div>
+            <div class="divider"></div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature A
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature B
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature C
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature D
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature E
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature F
+            </div>
+            <button data-modal-target="#modal" class="cta">Start Today</button>
+        </div>
+        <div class="price-column popular">
+            <div class="most-popular">Most Popular</div>
+            <div class="price-header">
+                <div class="price">
+                    <div class="dollar-sign">$</div>
+                    10
+                    <div class="per-month">/mo</div>
+                </div>
+                <div class="plan-name">Professional</div>
+            </div>
+            <div class="divider"></div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature A
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature B
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature C
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature D
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature E
+            </div>
+            <div class="feature inactive">
+                <img src="x-square.svg"> Feature F
+            </div>
+            <button class="cta">Start Today</button>
+        </div>
+        <div class="price-column">
+            <div class="price-header">
+                <div class="price">
+                    <div class="dollar-sign">$</div>
+                    10
+                    <div class="per-month">/mo</div>
+                </div>
+                <div class="plan-name">Enterprise</div>
+            </div>
+            <div class="divider"></div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature A
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature B
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature C
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature D
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature E
+            </div>
+            <div class="feature">
+                <img src="check-circle.svg"> Feature F
+            </div>
+            <button class="cta">Start Today</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="link.svg" alt="">
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="Obrazek1.jpg" alt="">
+                </li>   
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="Obrazek2.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="Obrazek3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel__button button carousel__button--right is-hidden">
+            <img src="right.svg" alt="">
+        </button>
+
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">
+                Example Modal
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sunt beatae cumque maxime temporibus, commodi, iste sapiente voluptatem perferendis ea iusto nihil repellat facilis? Eos accusamus aliquam reprehenderit ipsum libero. Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Illo itaque id laboriosam, eligendi sint quia exercitationem corrupti ratione eaque fugit. Ut excepturi nemo accusantium illum numquam dignissimos quam velit deserunt.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+
+
+</body>
+
+</html>
